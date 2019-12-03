@@ -1,17 +1,22 @@
 let money = prompt("Ваш бюджет на місяць?");
 let time = prompt("Введіть дату в форматі YYYY-MM-DD");
 
-let a = prompt("Введіть обов'язкову статтю розходів в цьому місяці"),
-    b = prompt("В скільки обійдуться розходи?");
-let c = alert(`Ваш бюджет на 1 день ${money/30}грн`);
-
-let expences = {},
-    income = [];
-expences[b] = a;
-
 let appData = {
     budget: money,
+    expences: {},
+    optionalExpences: {},
+    income: [],
     timeData: time,
-}
+    saving: false
+};
 
+let a1 = prompt("Введіть обов'язкову статтю розходів в цьому місяці"),
+    a2 = prompt("В скільки обійдуться розходи?"),
+    a3 = prompt("Введіть обов'язкову статтю розходів в цьому місяці"),
+    a4 = prompt("В скільки обійдуться розходи?");
+
+appData.expences.a1 = a2;
+appData.expences.a3 = a4;
+
+alert(appData.budget / 30);
 
