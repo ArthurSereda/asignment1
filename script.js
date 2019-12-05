@@ -70,7 +70,6 @@ function checkSavings() {   //накопичення з депозиту
   }
 }
 checkSavings();
-
 function chooseOptExpenses() {   //необов'язкові витрати
   for(let i = 1; i < 4; i++) {
     let optExpenses = prompt("Статья необязательных расходов", "Отмените для выхода из цыкла");
