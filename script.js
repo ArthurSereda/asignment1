@@ -76,10 +76,16 @@ let appData = {
       } else {
         i -= 1;
       }
+      appData.income.forEach( (item, index) => console.log(`Способи дод. заробітку: ${index + 1} - ${item}`))
     }
-
+  },
+  allData: () => {
+    console.log("Наша програма включає в себе такі дані:");
+    for(let allData in appData) {
+      console.log(allData);
+    }
   }
 
 
 
-};//appData
+};//appData end
